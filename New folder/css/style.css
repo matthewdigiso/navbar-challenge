@@ -1,0 +1,64 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling the navbar */
+.navbar {
+    background-color: #333;
+    width: 200px; /* Adjust width as needed */
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto; /* Enable scrolling if content exceeds viewport */
+}
+
+/* Styling the list inside the navbar */
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling list items */
+.navbar li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #555;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Styling links */
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover effect */
+.navbar li:hover {
+    background-color: #555;
+}
+
+/* Hover effect on links */
+.navbar li:hover a {
+    color: #ffff00; /* Change link color on hover */
+}
+
+/* Active link styling */
+.navbar li.active {
+    background-color: #555;
+}
+
+.navbar li.active a {
+    color: #ffff00; /* Change active link color */
+}
