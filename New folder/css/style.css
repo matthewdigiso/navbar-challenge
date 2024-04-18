@@ -1,64 +1,58 @@
-/* Resetting default margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/* Styling the navbar */
-.navbar {
+    background-color: #f4f4f4;
+  }
+  
+  nav {
     background-color: #333;
-    width: 200px; /* Adjust width as needed */
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    overflow-y: auto; /* Enable scrolling if content exceeds viewport */
-}
-
-/* Styling the list inside the navbar */
-.navbar ul {
+    padding: 10px 0;
+  }
+  
+  ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
-}
-
-/* Styling list items */
-.navbar li {
-    padding: 15px 20px;
-    border-bottom: 1px solid #555;
-    transition: background-color 0.3s ease; /* Smooth hover transition */
-}
-
-/* Styling links */
-.navbar a {
-    color: #fff;
+    padding: 0;
+    text-align: center;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
     text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  li a:hover {
+    background-color: #555;
+  }
+  
+  .page {
+    display: none;
+    padding: 20px;
+  }
+  
+  .page.active {
     display: block;
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-/* Hover effect */
-.navbar li:hover {
-    background-color: #555;
-}
-
-/* Hover effect on links */
-.navbar li:hover a {
-    color: #ffff00; /* Change link color on hover */
-}
-
-/* Active link styling */
-.navbar li.active {
-    background-color: #555;
-}
-
-.navbar li.active a {
-    color: #ffff00; /* Change active link color */
-}
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .page h1 {
+    color: #333;
+  }
+  
+  .page p {
+    color: #666;
+  }
+  
